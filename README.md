@@ -1,2 +1,2 @@
 # BlazorApp
-.net 9 Blazor and Web API
+.net 8 Blazor and Web API App
