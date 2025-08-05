@@ -1,0 +1,334 @@
+/workspaces/BlazorApp/TodoApi.LoadTestRunner/TodoApi.LoadTestRunner.csproj : warning NU1603: TodoApi.LoadTestRunner depends on NBomber (>= 3.0.7) but NBomber 3.0.7 was not found. An approximate best match of NBomber 3.1.0 was resolved.
+/workspaces/BlazorApp/TodoApi.LoadTestRunner/TodoApi.LoadTestRunner.csproj : warning NU1603: TodoApi.LoadTestRunner depends on NBomber (>= 3.0.7) but NBomber 3.0.7 was not found. An approximate best match of NBomber 3.1.0 was resolved.
+  _   _   ____                        _                                         
+ | \ | | | __ )    ___    _ __ ___   | |__     ___   _ __                       
+ |  \| | |  _ \   / _ \  | '_ ` _ \  | '_ \   / _ \ | '__|                      
+ | |\  | | |_) | | (_) | | | | | | | | |_) | |  __/ | |                         
+ |_| \_| |____/   \___/  |_| |_| |_| |_.__/   \___| |_|                         
+                                                                                
+03:05:19 [[38;5;39mINF[0m] NBomber [38;5;10m3.1.0[0m Started a new session: 
+[38;5;10m2025-08-05_03.05.87_session_5200ba4e[0m
+03:05:20 [[38;5;39mINF[0m] NBomber started as single node
+03:05:20 [[38;5;39mINF[0m] Plugins: no plugins were loaded
+03:05:20 [[38;5;39mINF[0m] Reporting sinks: no reporting sinks were loaded
+03:05:20 [[38;5;39mINF[0m] Starting init...
+03:05:20 [[38;5;39mINF[0m] Target scenarios: [38;5;10mweather_load_test[0m
+03:05:20 [[38;5;39mINF[0m] Init finished
+03:05:20 [[38;5;39mINF[0m] Starting warm up...
+[?25l                                                                                
+           [38;5;10mweather_load_test[0m [38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   0% (0:00:01-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                           [38;5;39m0[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━[0m  40% (0:00:02-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━[0m  60% (0:00:03-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━[0m  80% (0:00:04-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━[0m  80% (0:00:05-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━[0m  80% (0:00:05-0:00:05)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                
+[?25h03:05:26 [[38;5;39mINF[0m] Starting bombing...
+[?25l                                                                                
+           [38;5;10mweather_load_test[0m [38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   0% (0:00:01-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                           [38;5;39m0[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   3% (0:00:02-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   5% (0:00:03-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   6% (0:00:04-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   8% (0:00:05-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m  10% (0:00:06-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━[0m  11% (0:00:07-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━━[0m  13% (0:00:08-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━[0m  15% (0:00:09-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━━[0m  16% (0:00:10-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━[0m  18% (0:00:11-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━━[0m  20% (0:00:12-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━[0m  21% (0:00:13-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━━[0m  23% (0:00:14-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━[0m  25% (0:00:15-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━[0m  26% (0:00:16-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━━[0m  28% (0:00:17-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━[0m  30% (0:00:18-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━━[0m  31% (0:00:19-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━[0m  33% (0:00:20-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━━[0m  35% (0:00:21-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━[0m  36% (0:00:22-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━━[0m  38% (0:00:23-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━[0m  40% (0:00:24-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━━[0m  41% (0:00:25-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━[0m  43% (0:00:26-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━━[0m  45% (0:00:27-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━[0m  46% (0:00:28-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━━[0m  48% (0:00:29-0:01:00)
+load: [38;5;39mkeep_constant[0m, copies:                                                    
+                          [38;5;39m20[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━[0m  50% (0:00:30-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m22[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━[0m  51% (0:00:31-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m22[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━━[0m  53% (0:00:32-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m24[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━[0m  55% (0:00:33-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m25[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━━[0m  56% (0:00:34-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m25[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━[0m  58% (0:00:35-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m27[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━━[0m  60% (0:00:36-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m28[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━[0m  61% (0:00:37-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m28[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━━[0m  63% (0:00:38-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m30[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━[0m  65% (0:00:39-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m31[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━━[0m  66% (0:00:40-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m31[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━[0m  68% (0:00:41-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m33[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━━[0m  70% (0:00:42-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m34[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━[0m  71% (0:00:43-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m34[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━━[0m  73% (0:00:44-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m36[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━[0m  75% (0:00:45-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m37[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━[0m  76% (0:00:46-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m37[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━━[0m  78% (0:00:47-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m39[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━[0m  80% (0:00:48-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m40[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━━[0m  81% (0:00:49-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m40[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━[0m  83% (0:00:50-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m42[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━━[0m  85% (0:00:51-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m43[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━[0m  86% (0:00:52-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m43[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━━[0m  88% (0:00:53-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m45[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━[0m  90% (0:00:54-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m46[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━━[0m  91% (0:00:55-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m46[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━[0m  93% (0:00:56-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m48[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━━[0m  95% (0:00:57-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m49[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━[0m  96% (0:00:58-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m49[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━[0m  98% (0:00:59-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m50[0m                                                    
+                                                                                [1A[1A[1A[1A                                                                                
+           [38;5;10mweather_load_test[0m [38;5;11m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;8m━[0m  98% (0:01:00-0:01:00)
+load: [38;5;39mramp_constant[0m, copies:                                                    
+                          [38;5;39m50[0m                                                    
+                                                                                
+[?25h03:06:29 [[38;5;39mINF[0m] Stopping scenarios...
+03:06:29 [[38;5;39mINF[0m] Calculating final statistics...
+
+────────────────────────────────── test info ───────────────────────────────────
+
+test suite: [38;5;10mnbomber_default_test_suite_name[0m
+test name: [38;5;10mnbomber_default_test_name[0m
+session id: [38;5;10m2025-08-05_03.05.87_session_5200ba4e[0m
+
+──────────────────────────────── scenario stats ────────────────────────────────
+
+scenario: [38;5;10mweather_load_test[0m
+  - ok count: [38;5;10m1833735[0m
+  - fail count: [38;5;9m0[0m
+  - all data: [38;5;10m0[0m MB
+  - duration: [38;5;10m00:01:00[0m
+
+load simulations: 
+  - [38;5;10mkeep_constant[0m, copies: [38;5;10m20[0m, during: [38;5;10m00:00:30[0m
+  - [38;5;10mramp_constant[0m, copies: [38;5;10m50[0m, during: [38;5;10m00:00:30[0m
+
+step: [38;5;39mfetch_weather[0m
+  - timeout: [38;5;10m5000[0m ms
+  - client factory: [38;5;10mnone[0m, clients: [38;5;10m0[0m
+  - data feed: [38;5;10mnone[0m
+
+┌────────────────────┬─────────────────────────────────────────────────────┐
+│               step │ ok stats                                            │
+├────────────────────┼─────────────────────────────────────────────────────┤
+│               name │ [38;5;39mfetch_weather[0m                                       │
+│      request count │ all = [38;5;10m1833735[0m, ok = [38;5;10m1833735[0m, RPS = [38;5;10m30562.2[0m          │
+│            latency │ min = [38;5;10m0.06[0m, mean = [38;5;10m0.91[0m, max = [38;5;10m82.44[0m, StdDev = [38;5;10m0.84[0m │
+│ latency percentile │ 50% = [38;5;10m0.73[0m, 75% = [38;5;10m1.06[0m, 95% = [38;5;10m1.82[0m, 99% = [38;5;10m3.88[0m      │
+└────────────────────┴─────────────────────────────────────────────────────┘
+
+──────────────────────────────────── hints ─────────────────────────────────────
+
+hint for Scenario [38;5;10mweather_load_test[0m:
+[38;5;11mStep: 'fetch_weather' in Scenario: 'weather_load_test' didn't track status code.[0m
+[38;5;11mIn order to track status code, you should use Response.Ok(statusCode: value)[0m
+
+hint for Scenario [38;5;10mweather_load_test[0m:
+[38;5;11mStep: 'fetch_weather' in Scenario: 'weather_load_test' didn't track data [0m
+[38;5;11mtransfer. In order to track data transfer, you should use [0m
+[38;5;11mResponse.Ok(sizeInBytes: value)[0m
+
+03:06:29 [[38;5;39mINF[0m] Reports saved in folder: 
+[38;5;10m/workspaces/BlazorApp/TodoApi.LoadTestRunner/reports/2025-08-05_03.05.
+87_session
+[38;5;10m_5200ba4e[0m
