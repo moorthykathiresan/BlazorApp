@@ -15,6 +15,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseOpenApi(); // Default: /swagger/v1/swagger.json
     app.UseSwaggerUi(); // Default: /swagger
+    app.UseOpenApi(settings => settings.Path = "/swagger/v1/swagger.yaml"); // Serves YAML at /swagger/v1/swagger.yaml
 }
 
 // ...existing code...
