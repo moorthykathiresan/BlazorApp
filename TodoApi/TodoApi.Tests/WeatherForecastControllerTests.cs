@@ -67,10 +67,48 @@ namespace TodoApi.Tests
             stopwatch.Stop();
             response.EnsureSuccessStatusCode();
             var elapsedMs = stopwatch.Elapsed.TotalMilliseconds;
-            // Assert that response time is less than 500ms (adjust as needed)
-            Assert.True(elapsedMs < 500, $"Response time was {elapsedMs}ms, which is too slow.");
-            // Output the response time for analysis
+            // Stricter threshold: 100ms
+            Assert.True(elapsedMs < 100, $"Response time was {elapsedMs}ms, which is too slow.");
             System.Console.WriteLine($"WeatherForecast endpoint response time: {elapsedMs}ms");
+        }
+
+        [Fact]
+        public async Task Get_WeatherForecast_ParallelRequests_Performance()
+        {
+            var client = _factory.CreateClient();
+            int parallelCount = 10;
+            var tasks = new System.Threading.Tasks.Task<double>[parallelCount];
+            for (int i = 0; i < parallelCount; i++)
+            {
+                tasks[i] = System.Threading.Tasks.Task.Run(async () => {
+                    var sw = System.Diagnostics.Stopwatch.StartNew();
+                    var resp = await client.GetAsync("/api/WeatherForecast");
+                    sw.Stop();
+                    resp.EnsureSuccessStatusCode();
+                    return sw.Elapsed.TotalMilliseconds;
+                });
+            }
+            var results = await System.Threading.Tasks.Task.WhenAll(tasks);
+            var avg = results.Average();
+            // Assert average response time is below 150ms
+            Assert.True(avg < 150, $"Average response time for parallel requests was {avg}ms, which is too slow.");
+            System.Console.WriteLine($"Average response time for {parallelCount} parallel requests: {avg}ms");
+        }
+
+        [Fact]
+        public async Task Get_WeatherForecast_ColdStart_Performance()
+        {
+            // Simulate cold start by creating a new factory/client
+            var factory = new WebApplicationFactory<TodoApi.Program>();
+            var client = factory.CreateClient();
+            var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var response = await client.GetAsync("/api/WeatherForecast");
+            stopwatch.Stop();
+            response.EnsureSuccessStatusCode();
+            var elapsedMs = stopwatch.Elapsed.TotalMilliseconds;
+            // Cold start threshold: 300ms
+            Assert.True(elapsedMs < 300, $"Cold start response time was {elapsedMs}ms, which is too slow.");
+            System.Console.WriteLine($"WeatherForecast cold start response time: {elapsedMs}ms");
         }
     }
 }
