@@ -25,6 +25,31 @@ namespace TodoApi.Tests
             Assert.Equal(5, forecasts.Length);
         }
 
+        [Fact]
+        public async Task Get_ReturnsValidTemperatureRange()
+        {
+            var client = _factory.CreateClient();
+            var forecasts = await client.GetFromJsonAsync<WeatherForecast[]>("/api/WeatherForecast");
+            Assert.All(forecasts, f => Assert.InRange(f.TemperatureC, -20, 55));
+        }
+
+        [Fact]
+        public async Task Get_ReturnsValidSummary()
+        {
+            var client = _factory.CreateClient();
+            var forecasts = await client.GetFromJsonAsync<WeatherForecast[]>("/api/WeatherForecast");
+            var validSummaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" };
+            Assert.All(forecasts, f => Assert.Contains(f.Summary, validSummaries));
+        }
+
+        [Fact]
+        public async Task Get_InvalidEndpoint_ReturnsNotFound()
+        {
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync("/api/InvalidEndpoint");
+            Assert.Equal(System.Net.HttpStatusCode.NotFound, response.StatusCode);
+        }
+
         public class WeatherForecast
         {
             public string Date { get; set; }
