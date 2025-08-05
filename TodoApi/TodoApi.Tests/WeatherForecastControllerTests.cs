@@ -67,9 +67,9 @@ namespace TodoApi.Tests
             stopwatch.Stop();
             response.EnsureSuccessStatusCode();
             var elapsedMs = stopwatch.Elapsed.TotalMilliseconds;
-            // Stricter threshold: 100ms
             Assert.True(elapsedMs < 100, $"Response time was {elapsedMs}ms, which is too slow.");
             System.Console.WriteLine($"WeatherForecast endpoint response time: {elapsedMs}ms");
+            LogResponseTime("SingleRequest", elapsedMs);
         }
 
         [Fact]
@@ -90,9 +90,10 @@ namespace TodoApi.Tests
             }
             var results = await System.Threading.Tasks.Task.WhenAll(tasks);
             var avg = results.Average();
-            // Assert average response time is below 150ms
             Assert.True(avg < 150, $"Average response time for parallel requests was {avg}ms, which is too slow.");
             System.Console.WriteLine($"Average response time for {parallelCount} parallel requests: {avg}ms");
+            foreach (var ms in results)
+                LogResponseTime("ParallelRequest", ms);
         }
 
         [Fact]
@@ -106,9 +107,24 @@ namespace TodoApi.Tests
             stopwatch.Stop();
             response.EnsureSuccessStatusCode();
             var elapsedMs = stopwatch.Elapsed.TotalMilliseconds;
-            // Cold start threshold: 300ms
             Assert.True(elapsedMs < 300, $"Cold start response time was {elapsedMs}ms, which is too slow.");
             System.Console.WriteLine($"WeatherForecast cold start response time: {elapsedMs}ms");
+            LogResponseTime("ColdStart", elapsedMs);
+        }
+
+        private static readonly string CsvPath = "/workspaces/BlazorApp/TodoApi/TodoApi.Tests/Performance/performance_results.csv";
+        private static readonly object CsvLock = new object();
+
+        private void LogResponseTime(string scenario, double ms)
+        {
+            lock (CsvLock)
+            {
+                var dir = System.IO.Path.GetDirectoryName(CsvPath);
+                if (!System.IO.Directory.Exists(dir))
+                    System.IO.Directory.CreateDirectory(dir);
+                var line = $"{scenario},{ms},{DateTime.UtcNow:O}\n";
+                System.IO.File.AppendAllText(CsvPath, line);
+            }
         }
     }
 }
