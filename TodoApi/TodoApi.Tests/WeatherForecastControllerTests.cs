@@ -57,5 +57,20 @@ namespace TodoApi.Tests
             public string Summary { get; set; }
             public int TemperatureF { get; set; }
         }
+
+        [Fact]
+        public async Task Get_WeatherForecast_Performance()
+        {
+            var client = _factory.CreateClient();
+            var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var response = await client.GetAsync("/api/WeatherForecast");
+            stopwatch.Stop();
+            response.EnsureSuccessStatusCode();
+            var elapsedMs = stopwatch.Elapsed.TotalMilliseconds;
+            // Assert that response time is less than 500ms (adjust as needed)
+            Assert.True(elapsedMs < 500, $"Response time was {elapsedMs}ms, which is too slow.");
+            // Output the response time for analysis
+            System.Console.WriteLine($"WeatherForecast endpoint response time: {elapsedMs}ms");
+        }
     }
 }
