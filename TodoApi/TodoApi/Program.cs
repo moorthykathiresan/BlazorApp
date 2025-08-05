@@ -21,3 +21,8 @@ if (app.Environment.IsDevelopment())
 // ...existing code...
 app.MapControllers();
 app.Run();
+
+namespace TodoApi
+{
+    public partial class Program { }
+}
